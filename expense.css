@@ -1,0 +1,22 @@
+.outer{
+    height:300px;
+    width: 500px;
+    border: 2px solid black;
+  
+}
+
+.inner{
+    height:50px;
+    width: 200px;
+    border: 2px solid black;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+}
+
+.navbar {
+    height: 200px;
+    width: 500px;
+    border: 2px solid green;
+
+  }
