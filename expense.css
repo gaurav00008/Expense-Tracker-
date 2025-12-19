@@ -3,7 +3,7 @@ html, body {
   padding: 0;
   width: 100%;
   height: 100%;
-  background-color:rgb(11, 79, 79); /* your purple bg */
+  background-color: #BFACC8; /* your purple bg */
 }
 
 
@@ -11,8 +11,9 @@ html, body {
 
 .outer{
    width: 100%;
+   height: 100%;
    min-height: 100vh;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     /* padding-left: 250px; */
   
 
@@ -27,7 +28,7 @@ html, body {
 }
 
 .header{
-    height:40px;
+    height:60px;
     width: 300px;
     margin-left: 70px;
     border: 2px solid black;
@@ -48,22 +49,22 @@ html, body {
 } */
 
 .navbar {
-    height: 55px; 
-    width: 1200px;
-    border: 2px solid gray;
+    height: 80px; 
+    width: 1300px;
+    border: 2px solid #53496c; 
     border-radius:4px; 
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     margin-left: 5px;
-    background-color: #9E768F;
+    background-color: #C8C6D7;
   } 
 
 
   /* MAIN DIV BODY */
     .main{
-        height:600px;
-        width: 1200px;
+        height:650px;
+        width: 1250px;
         border: 2px solid black;
     }
 
@@ -86,11 +87,15 @@ html, body {
 
 
   .btn{
-    height: 20px;
-    width: 50px;
+    height: 25px;
+    width: 80px;
     border: 2px solid black;
+    border-radius: 2px;
+    margin-bottom: 10px;
     display:inline-block;
   }
+
+
 
 
 
@@ -201,9 +206,9 @@ body{
 
 /* BALANCE DIV MANAGEMENT */
 .balance{
-  height: 100px;    /* REMOVE THIS AT LAST JUST FOR REFRENCE */
+  height: 350px;    /* REMOVE THIS AT LAST JUST FOR REFRENCE */
   width: 800px;
-  /* border: 2px solid black; */
+  border: 2px solid black;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
