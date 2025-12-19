@@ -1,0 +1,45 @@
+h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    border: 4px solid black;
+    border-width: 3px 3px 3px 3px;
+    padding-left: 60px;
+    margin-left:60px ;
+    
+}
+
+
+.signup{
+    height: 600px;
+    width: 700px;
+    /* border: 2px solid black; */
+    display:flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px 90px 80px 150px;
+    flex-direction: column;
+    
+}
+
+.signup form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+    border: 2px solid black;
+}
+
+.details{
+    height: 500px;
+    width: 400px;
+    border: 2px solid gray;
+    padding: 0px 80px 50px 70px;
+    flex-direction: column;
+}
+
+h3{
+    margin-right: 120px;
+}
