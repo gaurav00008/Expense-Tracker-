@@ -28,8 +28,9 @@ html, body {
 }
 
 .header{
-    height:60px;
-    width: 300px;
+    height:120px;
+    width: 1000px;
+     font-size: 60px;
     margin-left: 70px;
     border: 2px solid black;
     display: flex;
@@ -49,8 +50,8 @@ html, body {
 } */
 
 .navbar {
-    height: 80px; 
-    width: 1300px;
+    height: 100px; 
+    width: 3000px;
     border: 2px solid #53496c; 
     border-radius:4px; 
     display: flex;
@@ -58,13 +59,14 @@ html, body {
     align-items: center;
     margin-left: 5px;
     background-color: #C8C6D7;
+     font-size: 30px;
   } 
 
 
   /* MAIN DIV BODY */
     .main{
-        height:650px;
-        width: 1250px;
+        height:1500px;
+        width: 3000px;
         border: 2px solid black;
     }
 
@@ -78,21 +80,25 @@ html, body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-size: 45px;
+     font-size: 40px;
     }
 
   h1{
     margin:0;
+     font-size: 40px;
   }
 
 
   .btn{
-    height: 25px;
+    height: 30px;
     width: 80px;
     border: 2px solid black;
     border-radius: 2px;
     margin-bottom: 10px;
     display:inline-block;
+    font-size: 30px;
+    cursor: pointer;
+     /* font-size: 40px; */
   }
 
 
@@ -107,6 +113,7 @@ html, body {
     margin-top: 10px;
     margin-left: 50px;
     padding: 20px, 20px, 20px, 10px;   
+     font-size: 40px;
   }
 
   .income{
@@ -117,6 +124,7 @@ html, body {
     margin-top: 10px;
     margin-left: 50px;
     padding: 10px, 10px, 10px, 10px;   
+     font-size: 40px;
   }
 
 
@@ -168,7 +176,7 @@ html, body {
     /* gap: 20px; This is wrong because the gap property works with flexbox or grid layouts. */
     display: flex;
     margin-top: 30px;
-    gap: 150px;
+    gap: 300px;
 }
 
 
@@ -206,34 +214,36 @@ body{
 
 /* BALANCE DIV MANAGEMENT */
 .balance{
-  height: 350px;    /* REMOVE THIS AT LAST JUST FOR REFRENCE */
-  width: 800px;
-  border: 2px solid black;
+  height: 650px;    /* REMOVE THIS AT LAST JUST FOR REFRENCE */
+  width: 1800px;
+  /* border: 2px solid black; THIS is the line/ box around the total balance and income section */
+  border-radius: 15px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between; 
   align-items: center;
-  margin-left: 200px;
-  margin-top: 80px; 
-  margin-bottom: 20px;
+  margin-left: 750px;
+  margin-top: 150px; 
+  margin-bottom: 10px;
 }
 
 
 
 .totalBalance{
-  height: 100px;
-  width: 200px;
+  height: 200px;
+  width: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   border: 2px solid black;
   border-radius: 15px;
+  
 }
 
 
 .income{
-  height: 100px;
-  width: 200px;
+  height: 200px;
+  width: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -246,3 +256,42 @@ body{
 
 
 /* TRANCSATION SECTION MANAGEMENT */
+h1{
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.transaction{
+  height: 270px;
+  width: 800px;
+  border: 2px solid black;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 450px;
+}
+
+
+/* LIST ITEM INSIDE THE TRANSACTION DIV */
+
+ol{
+  font-size: 40px;
+  margin-top: 20px;
+  margin-right: 400px;
+  margin-bottom: 20px;
+  /* display: inline;
+  justify-content: space-evenly; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+li{
+  margin-bottom: 20px;
+}
