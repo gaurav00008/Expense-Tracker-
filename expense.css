@@ -3,7 +3,9 @@ html, body {
   padding: 0;
   width: 100%;
   height: 100%;
-  background-color: #BFACC8; /* your purple bg */
+   background-color: #BFACC8; your purple bg */
+  opacity: 100%; 
+
 }
 
 
@@ -267,14 +269,14 @@ h1{
 
 .transaction{
   height: 270px;
-  width: 800px;
+  width: 1200px;
   border: 2px solid black;
   border-radius: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-left: 450px;
+  margin-left: 800px;
 }
 
 
@@ -283,7 +285,7 @@ h1{
 ol{
   font-size: 40px;
   margin-top: 20px;
-  margin-right: 400px;
+  margin-right: 830px;
   margin-bottom: 20px;
   /* display: inline;
   justify-content: space-evenly; */
@@ -292,6 +294,10 @@ ol{
     justify-content: space-between;
 }
 
-li{
+.transaction li{
   margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 250px; /* adjust as needed */
+  /* white-space: pre-wrap; allows text to wrap */
 }

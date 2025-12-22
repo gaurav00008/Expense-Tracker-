@@ -3,33 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign up Page</title>
+    <title>Create Account</title>
     <link rel="stylesheet" href="signup.css">
 </head>
 <body>
-    
-<!-- SIGN UP PAGE -->
-<div class="signup">
-    <div class="details">
-    <form id="signup-form">
-         <h3>Create Your Account</h3>
-        </br>
-        <input type="text" id="Fullname" name="Full name" placeholder="Enter your full name" required></br>
-        <input type="email" id="email" name="email" placeholder="Email" required></br>
-        <input type="password" id="password" name="password" placeholder="Password" required></br>
-        <input type="password" id="password" name="password" placeholder="Confirm Your Password" required></br>
-        <button type="submit">Sign Up</button></br>
-        <link>Already have an account? <a href="login.html">Log In</a></link></br>
-        </div>
-    </form>
+
+<div class="signup-container">
+    <div class="signup-card">
+        <h2>Create Account</h2>
+        <p class="subtitle">Join us and get started</p>
+
+        <form>
+            <div class="input-group">
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="input-group">
+                <label>Email</label>
+                <input type="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="input-group">
+                <label>Password</label>
+                <input type="password" placeholder="Create password" required>
+            </div>
+
+            <div class="input-group">
+                <label>Confirm Password</label>
+                <input type="password" placeholder="Confirm password" required>
+            </div>
+
+            <button type="submit">Sign Up</button>
+
+            <p class="login-text">
+                Already have an account?
+                <a href="#">Log In</a>
+            </p>
+        </form>
+    </div>
 </div>
 
 </body>
 </html>
-
-
-
-
-
-
-
