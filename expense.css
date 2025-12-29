@@ -11,38 +11,38 @@ html, body {
 
 
 
+
+/* WHOLE OUTER CONTAINER */
 .outer{
    width: 100%;
-   height: 100%;
    min-height: 100vh;
    background-color: #1A212B;
-    /* border: 2px solid black; */
-    /* padding-left: 250px; */
-  
 
+   display: flex;
+   flex-direction: column;
 
- display: flex;
-  flex-direction: column;   /* 🔑 THIS is the key */
-  align-items: center;      /* center horizontally */
-  padding-top: 20px;
-    /* background-color: #2B2118; */
-    /* background-color: #A1869E; */
-  
+   padding: 20px 60px; /* DESKTOP SIDE PADDING */
 }
 
+
+
+
+
+ /* HEADER SECTION */
 .header{
     height:120px;
-    width: 1000px;
-     font-size: 60px;
-    margin-left: 70px;
-    border: 2px solid black;
+    width: 100%;
+
+    font-size: 48px;
     border-radius: 16px;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background: antiquewhite; */
+
     background-color: #202734;
 }
+
 
 /* /* .inner{
     height:50px;
@@ -53,18 +53,21 @@ html, body {
     align-items: center;
 } */
 
+/* NAVIGATION BAR */
 .navbar {
-    height: 100px; 
-    width: 3200px;
-    border: 2px solid #53496c; 
+    height: 80px; 
+    width: 100%;
+    max-width: 2500px;
+    margin: auto;   
     border-radius:14px; 
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin-left: 5px;
+
     background-color: #242C3A;
-     font-size: 30px;
-  } 
+    font-size: 24px;
+}
+
 
 
   .navbar a {
@@ -73,15 +76,23 @@ html, body {
     font-weight: bold;
   }
 
-  /* MAIN DIV BODY */
-    .main{
-        height:1500px;
-        width: 3000px;
-        border: 2px solid black;
-        border-radius: 14px;
-        background-color: #1F2632;
-      
-    }
+
+/* MAIN DIV BODY */
+.main{
+    width: 100%;              /* FULL SCREEN */
+    min-height: 100vh;
+
+    background-color: #1F2632;
+    border-radius: 14px;
+    border: 2px solid black;
+
+    padding: 40px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
 
   
 
@@ -118,6 +129,7 @@ html, body {
 
 
 
+/* BALANCE DIV MANAGEMENT */
 
 
   .totalBalance{
@@ -148,6 +160,13 @@ html, body {
   padding: 15px;
 }
 
+/* LOGO + TITLE + ADD BUTTON ALIGNMENT */
+.top-bar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 
 /* MAIN BODY CONTENT DIV HEADING  */
 
@@ -165,38 +184,10 @@ html, body {
 
 
 
-/* logo & add opposite side */
-.logo {
-  float: left;
-  height: 80px;
-  width: 120px;
-  border: 1px solid black;
-  background-color: #0d346e;
-}
-
-.btn {
-  float: right;
-  cursor: pointer;
-  border: 1px solid black;
-  padding: 4px 10px;
-  background-color: #64A3FF;
-  color: #0F172A;
-}
-
-/* clear float issue */
-.main::after {
-  content: "";
-  display: block;
-  clear: both;
-}
 
 
-.balance{
-    /* gap: 20px; This is wrong because the gap property works with flexbox or grid layouts. */
-    display: flex;
-    margin-top: 30px;
-    gap: 300px;
-}
+
+
 
 
 /* Transaction Section   */
@@ -219,33 +210,18 @@ ol{
 
 
 
-/* whole body managing  */
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 50px;
-   
-}
 
 
 
-/* BALANCE DIV MANAGEMENT */
+
+ /* BALANCE DIV MANAGEMENT */
 .balance{
-  height: 650px;    /* REMOVE THIS AT LAST JUST FOR REFRENCE */
-  width: 1800px;
-  /* border: 2px solid black; THIS is the line/ box around the total balance and income section */
-  border-radius: 15px;
+  width: 100%;
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-around; /* SPREAD ACROSS SCREEN */
   align-items: center;
-  margin-left: 750px;
-  margin-top: 150px; 
-  margin-bottom: 10px;
-  color: #474350;
+  margin-top: 400px;
 }
-
 
 
 .totalBalance{
@@ -282,12 +258,12 @@ body{
 /* TRANCSATION SECTION MANAGEMENT */
 
 .transactions-box {
-    width: 800px;
-    height: 350px;
+    width: 1000px;
+    height: 400px;
     background: #1D2533;
     border-radius: 12px;
     padding: 20px;
-    margin: 40px auto;
+    margin: 300px auto;
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
