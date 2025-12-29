@@ -65,7 +65,7 @@ html, body {
     align-items: center;
 
     background-color: #242C3A;
-    font-size: 24px;
+    font-size: 45px;
 }
 
 
@@ -84,7 +84,9 @@ html, body {
 
     background-color: #1F2632;
     border-radius: 14px;
-    border: 2px solid black;
+
+
+    /* border: 2px solid black; */
 
     padding: 40px;
 
@@ -121,8 +123,9 @@ html, body {
     border: 2px solid black;
     border-radius: 2px;
     margin-bottom: 10px;
+    margin-top: 10px;
     display:inline-block;
-    font-size: 30px;
+    font-size: 36px;
     cursor: pointer;
      /* font-size: 40px; */
   }
@@ -140,8 +143,8 @@ html, body {
 
 
   .totalBalance{
-    height: 90px;
-    width: 130px;
+    height: 120px;
+    width: 150px;
     border: 2px solid black;
     border-radius: 5px;
     margin-top: 10px;
@@ -151,8 +154,8 @@ html, body {
   }
 
   .income{
-    height: 90px;
-    width: 130px;
+    height: 120px;
+    width: 150px;
     border: 2px solid black;
     border-radius: 5px;
     margin-top: 10px;
@@ -163,7 +166,7 @@ html, body {
 
 
 .main {
-  border: 2px solid black;
+  /* border: 2px solid black; */
   padding: 15px;
 }
 
@@ -269,8 +272,8 @@ ol{
     height: 400px;
     background: #1D2533;
     border-radius: 12px;
-    padding: 20px;
-    margin: 300px auto;
+    padding: 50px;
+    margin: 400px auto;
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
@@ -278,13 +281,16 @@ ol{
     text-align: center;
     margin-bottom: 15px;
     font-size: 22px;
-    color: #3b2f4a;
+    color: #ecdc69;
+    text-transform: uppercase;
+    font-size: 30px;
 }
 
 .transaction-list {
     list-style: none;
     padding: 0;
     margin: 0;
+   
 }
 
 .transaction-list li {
@@ -296,13 +302,13 @@ ol{
     padding: 12px 15px;
     border-radius: 8px;
     margin-bottom: 10px;
-    font-size: 16px;
+    font-size: 30px;
     transition: 0.2s;
 }
 
 .transaction-list li:hover {
     background: #2F3B52;
-    transform: scale(1.02);
+    transform: scale(1.03);
 }
 
 .amount {
@@ -310,3 +316,12 @@ ol{
     color: #22C55E;
 }
 
+.totalBalance p{
+    font-size: 36px;
+    color: #22C55E;
+}
+
+.income p{
+    font-size: 36px;
+    color: #ec0b0b; 
+} 
