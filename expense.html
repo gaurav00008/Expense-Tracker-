@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Expense Tracker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="expense.css">
 </head>
 <body>
@@ -33,7 +34,7 @@
 
 <!-- MAIN DIV, CONTENT GOES HERE -->
  <header class="main">
-    <div class="logo">Logo</div>
+    <div class="logo"><i class="fas fa-coins"></i></div>
     <h3>Expense Tracker</h3>
      <div class="btn">+ Add</div>
 
@@ -51,19 +52,35 @@
     </div>
     
      </div> 
-
+    
 
       <!-- Transaction Section -->
-    <h1><b>Recent Transactions</b></h1>
-    <div class="transaction">
-       <ol type="1">
-  <li>Starbucks$80</li>
-  <li>Americano $90</li>
-  <li>Cappuccino $100</li>
-    </ol>
+      <div class="transactions-box">
+    <h2>Recent Transactions</h2>
 
-
-    </div>
+    <ul class="transaction-list">
+        <li>
+            <span>☕ Latte</span>
+            <span class="amount">$50</span>
+        </li>
+        <li>
+            <span>🥤 Milkshake</span>
+            <span class="amount">$80</span>
+        </li>
+        <li>
+            <span>🧊 Ice Tea</span>
+            <span class="amount">$30</span>
+        </li>
+        <li>
+            <span>🍵 Matcha</span>
+            <span class="amount">$35</span>
+        </li>
+        <li>
+            <span>☕ Espresso</span>
+            <span class="amount">$22</span>
+        </li>
+    </ul>
+</div>
 
  </header>
 

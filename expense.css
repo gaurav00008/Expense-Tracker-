@@ -3,7 +3,7 @@ html, body {
   padding: 0;
   width: 100%;
   height: 100%;
-   background-color: #BFACC8; your purple bg */
+   background-color: #253237; /* WHOLE BODY BACKGROUND COLOR  */
   opacity: 100%; 
 
 }
@@ -15,6 +15,7 @@ html, body {
    width: 100%;
    height: 100%;
    min-height: 100vh;
+   background-color: #1A212B;
     /* border: 2px solid black; */
     /* padding-left: 250px; */
   
@@ -35,11 +36,12 @@ html, body {
      font-size: 60px;
     margin-left: 70px;
     border: 2px solid black;
+    border-radius: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
     /* background: antiquewhite; */
-    background-color: #797596;
+    background-color: #202734;
 }
 
 /* /* .inner{
@@ -53,36 +55,47 @@ html, body {
 
 .navbar {
     height: 100px; 
-    width: 3000px;
+    width: 3200px;
     border: 2px solid #53496c; 
-    border-radius:4px; 
+    border-radius:14px; 
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     margin-left: 5px;
-    background-color: #C8C6D7;
+    background-color: #242C3A;
      font-size: 30px;
   } 
 
+
+  .navbar a {
+    text-decoration: none;
+    color: #BFC9D6;
+    font-weight: bold;
+  }
 
   /* MAIN DIV BODY */
     .main{
         height:1500px;
         width: 3000px;
         border: 2px solid black;
+        border-radius: 14px;
+        background-color: #1F2632;
+      
     }
 
-  .logo{
-    height:40px;
-    width: 60px;
-    border: 2px solid black;
+  
+
+  .logo i{
+    height:70px;
+    width: 90px;
+    /* border: 2px solid black; */
     margin-bottom: 10px;
     margin-top: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-     font-size: 40px;
+     font-size: 70px;
     }
 
   h1{
@@ -145,7 +158,8 @@ html, body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-size: 45px;
+   font-size: 100px; 
+   
 }
 
 
@@ -154,9 +168,10 @@ html, body {
 /* logo & add opposite side */
 .logo {
   float: left;
-  height: 40px;
-  width: 100px;
+  height: 80px;
+  width: 120px;
   border: 1px solid black;
+  background-color: #0d346e;
 }
 
 .btn {
@@ -164,6 +179,8 @@ html, body {
   cursor: pointer;
   border: 1px solid black;
   padding: 4px 10px;
+  background-color: #64A3FF;
+  color: #0F172A;
 }
 
 /* clear float issue */
@@ -226,6 +243,7 @@ body{
   margin-left: 750px;
   margin-top: 150px; 
   margin-bottom: 10px;
+  color: #474350;
 }
 
 
@@ -239,6 +257,8 @@ body{
   flex-direction: column;
   border: 2px solid black;
   border-radius: 15px;
+  background-color: #2D3748;
+  color: #E5E7EB;
   
 }
 
@@ -252,52 +272,58 @@ body{
   flex-direction: column;
   border: 2px solid black;
   border-radius: 15px;
+  background-color: #2D3748;
+  color: #ECFDF5;
 }
 
 
 
 
 /* TRANCSATION SECTION MANAGEMENT */
-h1{
-  font-size: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
+
+.transactions-box {
+    width: 800px;
+    height: 350px;
+    background: #1D2533;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 40px auto;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
-.transaction{
-  height: 270px;
-  width: 1200px;
-  border: 2px solid black;
-  border-radius: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-left: 800px;
+.transactions-box h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 22px;
+    color: #3b2f4a;
 }
 
+.transaction-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 
-/* LIST ITEM INSIDE THE TRANSACTION DIV */
-
-ol{
-  font-size: 40px;
-  margin-top: 20px;
-  margin-right: 830px;
-  margin-bottom: 20px;
-  /* display: inline;
-  justify-content: space-evenly; */
+.transaction-list li {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+    color: #E5E7EB;
+    background: #263040;
+    padding: 12px 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    transition: 0.2s;
 }
 
-.transaction li{
-  margin-bottom: 20px;
-  display: flex;
-  justify-content: space-between;
-  width: 250px; /* adjust as needed */
-  /* white-space: pre-wrap; allows text to wrap */
+.transaction-list li:hover {
+    background: #2F3B52;
+    transform: scale(1.02);
 }
+
+.amount {
+    font-weight: bold;
+    color: #22C55E;
+}
+
