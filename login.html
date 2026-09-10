@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login | Expense Tracker</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+
+<div class="navbar">
+  <div class="brand"><i class="fas fa-coins"></i> Expense Tracker</div>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="login.html" class="active">Login</a>
+    <a href="signup.html">Sign Up</a>
+  </div>
+</div>
+
+<div class="center">
+  <div class="wrapper">
+    <h1>Welcome Back</h1>
+    <p class="sub">Log in to view your dashboard</p>
+
+    <form id="loginForm" novalidate>
+      <div class="input-box">
+        <input type="text" id="username" placeholder="Username">
+        <i class="fa-solid fa-user"></i>
+      </div>
+      <div class="field-error" id="userError">Please enter your username.</div>
+
+      <div class="input-box">
+        <input type="password" id="password" placeholder="Password">
+        <i class="fa-solid fa-lock"></i>
+      </div>
+      <div class="field-error" id="passError">Password must be at least 6 characters.</div>
+
+      <div class="remember-forget">
+        <label><input type="checkbox" id="remember"> Remember me</label>
+        <a href="#" id="forgotLink">Forgot password?</a>
+      </div>
+
+      <button type="submit" class="btn" id="loginBtn">Login</button>
+
+      <div class="status-msg" id="statusMsg"></div>
+
+      <div class="register-link">
+        Don't have an account? <a href="signup.html">Sign Up</a>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script src="js/login.js"></script>
+</body>
+</html>

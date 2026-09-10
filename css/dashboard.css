@@ -1,0 +1,131 @@
+/* ============================
+   DASHBOARD.CSS
+   Styles specific to dashboard.html
+============================ */
+
+.hero-text{ margin-bottom: 30px; }
+.hero-text h1{ font-size: 30px; font-weight: 700; margin-bottom: 6px; }
+.hero-text p{ color: var(--muted); font-size: 15px; line-height:1.6; max-width: 520px; }
+
+/* STAT CARDS */
+.stats{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-bottom: 30px;
+}
+.stat-card{
+  background: linear-gradient(160deg, var(--panel-2), var(--panel));
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 20px 22px;
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+.stat-card:hover{ transform: translateY(-4px); }
+.stat-card.balance:hover{ border-color: var(--gold); box-shadow: 0 10px 30px -8px rgba(245,185,77,.35); }
+.stat-card.income:hover{ border-color: var(--income); box-shadow: 0 10px 30px -8px rgba(53,209,142,.35); }
+.stat-card.expense:hover{ border-color: var(--expense); box-shadow: 0 10px 30px -8px rgba(255,107,122,.35); }
+
+.stat-label{ display:flex; align-items:center; gap:8px; color: var(--muted); font-size: 13px; font-weight:600; margin-bottom: 10px; }
+.stat-card.balance .stat-label i{ color: var(--gold); }
+.stat-card.income .stat-label i{ color: var(--income); }
+.stat-card.expense .stat-label i{ color: var(--expense); }
+.stat-amount{ font-family:'Sora', sans-serif; font-size: 26px; font-weight: 700; }
+
+/* ADD TRANSACTION PANEL */
+.panel{
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 26px;
+}
+.panel h3{ font-size: 17px; margin-bottom: 16px; }
+
+.form-row{ display:flex; gap: 12px; flex-wrap: wrap; }
+
+.field{ flex: 1 1 160px; display:flex; flex-direction:column; gap:6px; }
+.field label{ font-size:12.5px; color: var(--muted); font-weight:600; }
+.field input{
+  background: var(--panel-2);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 11px 13px;
+  color: var(--text);
+  font-size: 14.5px;
+  font-family:'Manrope',sans-serif;
+  outline:none;
+  transition: border-color .2s ease, box-shadow .2s ease;
+}
+.field input:focus{ border-color: var(--violet); box-shadow: 0 0 0 3px rgba(142,124,248,.18); }
+
+.type-toggle{ display:flex; gap:8px; }
+.type-btn{
+  flex:1;
+  padding: 11px;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  background: var(--panel-2);
+  color: var(--muted);
+  font-weight:700;
+  font-size: 13.5px;
+  cursor:pointer;
+  transition: all .2s ease;
+}
+.type-btn[data-type="income"].active{
+  background: var(--income-soft); border-color: var(--income); color: var(--income);
+  box-shadow: 0 0 14px rgba(53,209,142,.25);
+}
+.type-btn[data-type="expense"].active{
+  background: var(--expense-soft); border-color: var(--expense); color: var(--expense);
+  box-shadow: 0 0 14px rgba(255,107,122,.25);
+}
+
+.add-btn{ margin-top: 16px; width: 100%; }
+
+.error-msg{ color: var(--expense); font-size: 13px; margin-top: 10px; display:none; }
+
+/* TRANSACTIONS LIST */
+.list-head{ display:flex; justify-content:space-between; align-items:center; margin-bottom: 14px; }
+.list-head h3{ font-size:17px; }
+.count-pill{
+  font-size: 12px; color: var(--muted); background: var(--panel-2);
+  border:1px solid var(--line); padding: 4px 10px; border-radius: 999px;
+}
+
+.tx-list{ list-style:none; display:flex; flex-direction:column; gap:10px; }
+
+.tx-item{
+  display:flex; align-items:center; justify-content:space-between;
+  background: var(--panel-2); border: 1px solid var(--line); border-radius: 12px;
+  padding: 14px 16px;
+  transition: transform .2s ease, border-color .2s ease;
+}
+.tx-item:hover{ transform: translateX(3px); border-color: #33415A; }
+
+.tx-left{ display:flex; align-items:center; gap:12px; }
+.tx-icon{ width: 38px; height:38px; border-radius: 10px; display:flex; align-items:center; justify-content:center; font-size: 15px; }
+.tx-item.income .tx-icon{ background: var(--income-soft); color: var(--income); }
+.tx-item.expense .tx-icon{ background: var(--expense-soft); color: var(--expense); }
+
+.tx-name{ font-weight:600; font-size: 14.5px; }
+.tx-date{ font-size: 12px; color: var(--muted); margin-top:2px; }
+
+.tx-right{ display:flex; align-items:center; gap:14px; }
+.tx-amount{ font-family:'Sora',sans-serif; font-weight:700; font-size: 15px; }
+.tx-item.income .tx-amount{ color: var(--income); }
+.tx-item.expense .tx-amount{ color: var(--expense); }
+
+.del-btn{
+  background: transparent; border: none; color: var(--muted);
+  font-size: 14px; cursor: pointer; width: 30px; height:30px; border-radius: 8px;
+  transition: all .2s ease;
+}
+.del-btn:hover{ color: var(--expense); background: var(--expense-soft); box-shadow: 0 0 12px rgba(255,107,122,.3); }
+
+.empty-state{ text-align:center; padding: 40px 20px; color: var(--muted); font-size: 14px; }
+.empty-state i{ font-size: 26px; margin-bottom: 10px; display:block; color:#3A4560; }
+
+@media (max-width: 680px){
+  .stats{ grid-template-columns: 1fr; }
+}

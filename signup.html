@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign Up | Expense Tracker</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+
+<div class="navbar">
+  <div class="brand"><i class="fas fa-coins"></i> Expense Tracker</div>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="login.html">Login</a>
+    <a href="signup.html" class="active">Sign Up</a>
+  </div>
+</div>
+
+<div class="center">
+  <div class="wrapper">
+    <h1>Create Account</h1>
+    <p class="sub">Join and start tracking your money</p>
+
+    <form id="signupForm" novalidate>
+      <div class="field">
+        <label>Full Name</label>
+        <input type="text" id="fullName" placeholder="Enter your full name">
+        <div class="field-error" id="nameError">Please enter your full name.</div>
+      </div>
+
+      <div class="field">
+        <label>Email</label>
+        <input type="text" id="email" placeholder="Enter your email">
+        <div class="field-error" id="emailError">Please enter a valid email address.</div>
+      </div>
+
+      <div class="field">
+        <label>Password</label>
+        <input type="password" id="pass1" placeholder="Create password">
+        <div class="strength"><div class="strength-bar" id="strengthBar"></div></div>
+        <div class="field-error" id="pass1Error">Password must be at least 6 characters.</div>
+      </div>
+
+      <div class="field">
+        <label>Confirm Password</label>
+        <input type="password" id="pass2" placeholder="Confirm password">
+        <div class="field-error" id="pass2Error">Passwords don't match.</div>
+      </div>
+
+      <button type="submit" class="btn" id="signupBtn">Sign Up</button>
+
+      <div class="status-msg" id="statusMsg"></div>
+
+      <div class="login-text">
+        Already have an account? <a href="login.html">Log In</a>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script src="js/signup.js"></script>
+</body>
+</html>

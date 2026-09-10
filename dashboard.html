@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Expense Tracker | Dashboard</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+
+<div class="navbar">
+  <div class="brand"><i class="fas fa-coins"></i> Expense Tracker</div>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="dashboard.html" class="active">Dashboard</a>
+    <a href="login.html">Login</a>
+    <a href="signup.html">Sign Up</a>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <div class="hero-text">
+    <h1>Your Dashboard</h1>
+    <p>Add income and expenses below — your balance and transaction history update instantly.</p>
+  </div>
+
+  <div class="stats">
+    <div class="stat-card balance">
+      <div class="stat-label"><i class="fa-solid fa-wallet"></i> Balance</div>
+      <div class="stat-amount" id="balanceAmount">$0</div>
+    </div>
+    <div class="stat-card income">
+      <div class="stat-label"><i class="fa-solid fa-arrow-trend-up"></i> Total Income</div>
+      <div class="stat-amount" id="incomeAmount">$0</div>
+    </div>
+    <div class="stat-card expense">
+      <div class="stat-label"><i class="fa-solid fa-arrow-trend-down"></i> Total Expense</div>
+      <div class="stat-amount" id="expenseAmount">$0</div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h3>Add a Transaction</h3>
+    <div class="form-row">
+      <div class="field" style="flex:2 1 220px;">
+        <label>Description</label>
+        <input type="text" id="txDesc" placeholder="e.g. Coffee, Salary, Rent">
+      </div>
+      <div class="field">
+        <label>Amount</label>
+        <input type="number" id="txAmount" placeholder="0.00" min="0" step="0.01">
+      </div>
+      <div class="field">
+        <label>Type</label>
+        <div class="type-toggle">
+          <button class="type-btn active" data-type="income" type="button">Income</button>
+          <button class="type-btn" data-type="expense" type="button">Expense</button>
+        </div>
+      </div>
+    </div>
+    <button class="btn add-btn" id="addBtn">+ Add Transaction</button>
+    <div class="error-msg" id="errorMsg">Please enter a description and a valid amount.</div>
+  </div>
+
+  <div class="panel">
+    <div class="list-head">
+      <h3>Recent Transactions</h3>
+      <span class="count-pill" id="countPill">0 items</span>
+    </div>
+    <ul class="tx-list" id="txList"></ul>
+    <div class="empty-state" id="emptyState">
+      <i class="fa-solid fa-receipt"></i>
+      No transactions yet — add your first one above.
+    </div>
+  </div>
+
+</div>
+
+<script src="js/dashboard.js"></script>
+</body>
+</html>
